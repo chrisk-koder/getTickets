@@ -63,7 +63,7 @@ ul {
 #hero {
     background: url("../img/oliviaBanner.webp") center top no-repeat;
     background-size: cover;
-    padding: 3rem 7rem 3rem 7rem;
+    padding: 5rem 7rem 5rem 7rem;
 }
 
 #hero .container {
