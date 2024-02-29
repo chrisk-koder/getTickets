@@ -99,6 +99,9 @@ ul {
 
 #discover .title {
     text-align: center;
+    font-family: "Madimi One", sans-serif;
+    color: #4d4d4d;
+    font-size: 2rem;
     margin: 2rem;
 }
 
