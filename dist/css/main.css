@@ -1,6 +1,107 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dev {
+    border: 1px solid pink;
+}
+
+/* Flex Container */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Other */
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .2s color;
+}
+
+a:hover {
+    color: rgb(184, 184, 184);
 }
 
 /* Navbar */
+
+nav {
+    background-color: #5931cd;
+    padding: 2rem;
+    color: white;
+}
+
+nav .brand {
+    font-family: "Lily Script One", system-ui;
+    justify-content: start;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+nav input[type=text], select {
+    border-radius: 20px;
+    padding: 1rem;
+    border: none;
+    width: 20rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+    font-size: 22px;
+}
+
+/* Hero Section */
+
+#hero {
+    background: url("../img/oliviaBanner.webp") center top no-repeat;
+    background-size: cover;
+    padding: 7rem;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#hero #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+}
+
+#hero #logo img {
+    margin-bottom: 2rem;
+}
+
+#hero #logo a {
+    border: 2px solid white;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 700px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero {
+        padding: 0rem;
+    }
+    #hero .logo img {
+        width: 50rem;
+    }
+}
