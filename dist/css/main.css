@@ -114,6 +114,7 @@ ul {
 
 #discover .artist {
     position: relative;
+    transition: .2s all;
 }
 
 #discover .artist img {
@@ -145,6 +146,10 @@ ul {
 #discover .artist .information p {
     font-size: 1rem;
     padding-right: 1rem;
+}
+
+#discover .artist:hover {
+    transform:translateY(-10px)
 }
 
 
