@@ -1,0 +1,20 @@
+/* Discover */
+
+#discover .title {
+    color: #4d4d4d;
+}
+
+#discover .artist .information {
+    color: white;
+}
+
+/* Footer */
+
+footer a {
+    color: #696969;
+}
+
+footer {
+    background-color: #e0e0e0;
+    color: #696969;
+}

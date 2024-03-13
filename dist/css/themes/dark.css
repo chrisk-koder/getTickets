@@ -1,0 +1,23 @@
+
+/* Background */
+
+body {
+    background-color: #1c1c28;
+}
+
+/* Discover */
+
+#discover .title {
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    background-color: #28293d;
+    color: white;
+}
+
+footer a {
+    color: inherit;
+}
