@@ -12,6 +12,7 @@
 
 .container {
     display: flex;
+    justify-content: space-between;
 }
 
 .grid-container {
@@ -37,10 +38,16 @@ a:hover {
 
 nav {
     background-image: linear-gradient(to right,#5931CD, #2D1967);
-    padding: 2rem;
     color: white;
     justify-content: space-between;
     align-items: center;
+}
+
+nav .container {
+    background-image: inherit;
+    padding: 2rem;
+    z-index: 1;
+    position: relative;
 }
 
 .brand {
@@ -58,12 +65,38 @@ nav input[type=text], select {
     width: 20rem;
 }
 
-ul {
-    display: flex;
+nav a {
+    font-size: 2.2rem;
+}
+
+nav ul {
     gap: 1.5rem;
     list-style-type: none;
-    font-size: 22px;
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+    background-image: inherit;
+    width: 100%;
+    text-align: right;
+    z-index: 0;
+    transition: transform 0.5s;
+    transform: translateY(0rem);
 }
+
+nav ul#menu.hidden {
+    transform: translateY(-20rem);
+}
+
+@keyframes openMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes closeMenu {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
 
 /* Hero Section */
 
@@ -175,11 +208,6 @@ footer ul {
 /* Responsiveness */
 
 @media screen and (max-width: 700px) {
-
-    /* Container */
-    .container {
-        flex-direction: column; /* Temporary */
-    }
 
     /* Hero Section */
     #hero {

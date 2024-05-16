@@ -17,14 +17,19 @@
     <link rel="stylesheet" href="./dist/css/themes/light.css" id="themeStyle">
     <!-- JavaScript -->
     <script src="./dist/js/themeManager.js"></script>
+    <script type="module" src="./dist/js/menu.js" defer></script>
 
     <title>getTickets - Get concert tickets online</title>
 </head>
 <body>
 
-    <nav class="container">
-        <h1 class="brand">getTickets</h1>
-        <ul>
+    <nav>
+        <div class="container">
+            <h1 class="brand">getTickets</h1>
+            <a id="burgerMenu" href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        
+        <ul id="menu" class="hidden">
             <li><a href="#">Music</a></li>
             <li><a href="#">Fesitval</a></li>
             <li><a href="#">Theater</a></li>
