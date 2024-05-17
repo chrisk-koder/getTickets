@@ -177,6 +177,7 @@ nav ul#menu.hidden {
 #discover .artist .information p {
     font-size: 1rem;
     padding-right: 1rem;
+    text-align: right;
 }
 
 #discover .artist:hover {
@@ -201,6 +202,7 @@ footer .copyright {
 
 footer ul {
     justify-content: center;
+    list-style-type: none;
     margin-top: 1rem;
 }
 
