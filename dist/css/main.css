@@ -45,6 +45,7 @@ a:hover {
     right: 1rem;
     font-size: 2rem;
     background: -webkit-linear-gradient(#6538ec, #5531c1);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.129);
